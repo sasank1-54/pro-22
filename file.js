@@ -1,22 +1,33 @@
-let a=8;
-let b=9;
-let c=10;
-s=a+b+c;
-console.log(Math.sqrt(s*((s-a)*(s-b)*(s-c))));
+//Area of a triangle when the three sides are given
 
-//Get File Extension
-filename="java.html";
-console.log(filename.split('.').pop());
+let a = 5;
+let b = 6;
+let c = 7;
+let s = (a+b+c)/2
+let arin= s*(s-a)*(s-b)*(s-c) 
+let area =Math.sqrt(arin)
 
-//if_else
-function sumortriple(x,z){
-if(x==z){
-    return 3*(x+z);
+console.log("The Area of the triangle with three sides is:"+area);
+
+//Filename Extension
+
+function getextension(filename){
+    const extension = filename.split('.').pop();
+    return extension;
 }
-else{
-    return (x+z);
-}
-}
-console.log(sumortriple(10, 30));
-console.log(sumortriple(4,4));
-console.log(sumortriple(12,12))
+
+let res = getextension('index.html');
+console.log(res);
+
+let res1 = getextension('Inherited.java')
+console.log(res1)
+
+
+//Triple the sum
+
+let a1 = 20;
+let b1 = 30;
+
+let c1 = 3*(a1+b1);
+
+console.log("The Thripled Sum of the 20 and 30 is: "+c1);
