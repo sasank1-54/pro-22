@@ -2,7 +2,7 @@ let a=8;
 let b=9;
 let c=10;
 s=a+b+c;
-console.log(Math.sqrt(s*((s-a)(s-b)(s-c))))
+console.log(Math.sqrt(s*((s-a)(s-b)(s-c))));
 
 //Get File Extension
 filename="java.html";
