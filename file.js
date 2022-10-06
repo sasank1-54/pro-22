@@ -1,33 +1,27 @@
-//Area of a triangle when the three sides are given
+let s1=5;
+let s2=6;
+let s3=7;
+let s= s1+s2+s3 / 2;
+let a = Math.sqrt(s*((s-s1)*(s-s2)*(s-s3)));
+console.log("Area of triangle : "+a);
 
-let a = 5;
-let b = 6;
-let c = 7;
-let s = (a+b+c)/2
-let arin= s*(s-a)*(s-b)*(s-c) 
-let area =Math.sqrt(arin)
-
-console.log("The Area of the triangle with three sides is:"+area);
-
-//Filename Extension
-
-function getextension(filename){
-    const extension = filename.split('.').pop();
-    return extension;
+function getFileExtension(filename){
+    const ext = filename.split('.').pop();
+    return ext;
 }
+const result1 = getFileExtension('module.js');
+console.log(result1);
+const result2 = getFileExtension('module.txt');
+console.log(result2);
 
-let res = getextension('index.html');
-console.log(res);
-
-let res1 = getextension('Inherited.java')
-console.log(res1)
-
-
-//Triple the sum
-
-let a1 = 20;
-let b1 = 30;
-
-let c1 = 3*(a1+b1);
-
-console.log("The Thripled Sum of the 20 and 30 is: "+c1);
+function sumTriple(sum1,sum2){
+    if(sum1 == sum2)
+    {
+        return 3 * (sum1 + sum2);
+    }
+    else{
+        return(sum1 + sum2);
+    }
+}
+console.log(sumTriple(4,6));
+console.log(sumTriple(4,4));
